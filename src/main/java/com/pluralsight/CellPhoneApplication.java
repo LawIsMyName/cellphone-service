@@ -12,7 +12,6 @@ public class CellPhoneApplication {
         int serialNumber = scanner.nextInt();
 
         String newLine = scanner.nextLine(); ///eat the new line
-        System.out.println(newLine);
 
         System.out.println("what model is the phone: ");
         String model = scanner.nextLine().trim();
@@ -26,14 +25,14 @@ public class CellPhoneApplication {
         System.out.println("who is the owner of the phone?: ");
         String owner = scanner.nextLine().trim();
 
-        CellPhone phoneData;
-        phoneData = new CellPhone(serialNumber, model, carrier, phoneNumber, owner);
+        CellPhone cellphone;
+        cellphone = new CellPhone(serialNumber, model, carrier, phoneNumber, owner);
 
-        System.out.println("serial number is:" + " " + phoneData.getSerialNumber());
-        System.out.println("phone model is:" + " " + phoneData.getModel());
-        System.out.println("carrier is:" + " " + phoneData.getCarrier());
-        System.out.println("phone number is:" + " " + phoneData.getPhoneNumber());
-        System.out.println("owner of the phone is:" + " " + phoneData.getOwner());
+        System.out.println("serial number is:" + " " + cellphone.getSerialNumber());
+        System.out.println("phone model is:" + " " + cellphone.getModel());
+        System.out.println("carrier is:" + " " + cellphone.getCarrier());
+        System.out.println("phone number is:" + " " + cellphone.getPhoneNumber());
+        System.out.println("owner of the phone is:" + " " + cellphone.getOwner());
 
 
 
