@@ -13,7 +13,10 @@ public class CellPhoneApplication {
         System.out.println("what model is the phone: ");
         String model = scanner.nextLine().trim();
 
-        sout
+        System.out.println("who is the carrier: ");
+        String carrier = scanner.nextLine().trim();
+
+
 
 
 
