@@ -22,6 +22,11 @@ public class CellPhoneApplication {
         System.out.println("what is the phone number: ");
         String phoneNumber = scanner.nextLine().trim();
 
+        System.out.println("who is the owner of the phone?: ");
+        String owner = scanner.nextLine().trim();
+
+
+
 
 
 
