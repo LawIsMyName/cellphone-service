@@ -7,11 +7,11 @@ public class CellPhoneApplication {
 
         Scanner scanner = new Scanner(System.in);
 
-
+        // Get the phone's info
         System.out.println("what is the serial number: " );
         int serialNumber = scanner.nextInt();
 
-        String newLine = scanner.nextLine(); ///eat the new line
+        scanner.nextLine(); ///eat the new line
 
         System.out.println("what model is the phone: ");
         String model = scanner.nextLine().trim();
@@ -25,27 +25,16 @@ public class CellPhoneApplication {
         System.out.println("who is the owner of the phone?: ");
         String owner = scanner.nextLine().trim();
 
+        // Create CellPhone object using the user's input
         CellPhone cellphone;
         cellphone = new CellPhone(serialNumber, model, carrier, phoneNumber, owner);
 
+        // Display the stored phone information using getters
         System.out.println("serial number is:" + " " + cellphone.getSerialNumber());
         System.out.println("phone model is:" + " " + cellphone.getModel());
         System.out.println("carrier is:" + " " + cellphone.getCarrier());
         System.out.println("phone number is:" + " " + cellphone.getPhoneNumber());
         System.out.println("owner of the phone is:" + " " + cellphone.getOwner());
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
